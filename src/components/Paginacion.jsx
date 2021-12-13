@@ -13,10 +13,11 @@ export default function Paginacion({prev, next, onPrevious, onNext}) {
     return(
         <nav>
             <ul className="pagination justify-content-center mt-5" >
-               
+                { prev ? 
                 <li className="page-item">
                     <button className="page-link" onClick={ handlePrevius }>Anteior</button>
-                </li>
+                </li> : null
+                }
 
                 
                 <li className="page-item">
